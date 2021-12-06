@@ -1,8 +1,8 @@
 for Kitty:
-Theme - AdventureTime
-Startup Config - Load tmux in home directory
+Theme=AdventureTime
+Startup Config=sh -c tmux
 
 for Vim:
-load Gruvbox theme
-load Plugin Manager
+Theme=gruvbox
+Plugin Manager=vim-plug
 
