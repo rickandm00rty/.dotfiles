@@ -1,1 +1,0 @@
-/home/kyle/Documents/.dotfiles/.vimrc
