@@ -1,5 +1,18 @@
 Terminal:
-
+Currently using Kitty with:
+  - Startup sessions 
+  - Adventure Time Theme & Transparency
+  
 Editor:
-
+Currently using vim with:
+  - Gruvbox Theme
+  - Vim-plug plugin manager
+  - fzf Fuzzy Finder
+  - NERDTree Explorer
+  - Miscellaneous Icon themes
+  - Powerline
+  
 Window Manager:
+Currently attempting to use Kitty startup sessions, but might use TMUX:
+ - No special TMUX configs at the moment but TMUX messes with my color scheming in vim and I haven't figured that out yet. Kitty startup sessions might be more elegent. 
+ - Eventually want to move to i3 as a tiling manager but learning vim first
