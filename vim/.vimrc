@@ -27,7 +27,7 @@ let g:floaterm_height = 0.9
 colorscheme gruvbox
 
 autocmd vimenter * ++nested colorscheme gruvbox
-set termguicolors
+"set termguicolors
 set background=dark
 "highlight Normal guibg=none
 
