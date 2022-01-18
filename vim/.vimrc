@@ -13,6 +13,9 @@ call plug#begin('~/.vim/autoload/')
 
   "https://github.com/junegunn/fzf/blob/master/README-VIM.md  
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+  Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 let g:gruvbox_transparent_bg = '(1)'
