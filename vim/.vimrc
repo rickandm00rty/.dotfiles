@@ -8,14 +8,16 @@ call plug#begin('~/.vim/autoload/')
   "https://github.com/preservim/nerdtree
   Plug 'preservim/nerdtree'
   
-  "https://github.com/morhetz/gruvbox/wiki/Installation#general
-  Plug 'morhetz/gruvbox'
+  Plug 'dracula/vim', { 'as': 'dracula' }
 
   "https://github.com/junegunn/fzf/blob/master/README-VIM.md  
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
   Plug 'voldikss/vim-floaterm'
 
+  Plug 'vim-airline/vim-airline'
+
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 let g:gruvbox_transparent_bg = '(1)'
@@ -24,10 +26,10 @@ let g:floaterm_keymap_toggle = '<F12>'
 ":FloatermNew && :FloatermHide
 let g:floaterm_width = 0.9
 let g:floaterm_height = 0.9
-colorscheme gruvbox
+"colorscheme dracula
 
-autocmd vimenter * ++nested colorscheme gruvbox
-"set termguicolors
+"autocmd vimenter * ++nested colorscheme dracula
+set termguicolors
 set background=dark
 "highlight Normal guibg=none
 
