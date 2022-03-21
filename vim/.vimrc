@@ -26,6 +26,7 @@ let g:floaterm_keymap_toggle = '<F12>'
 ":FloatermNew && :FloatermHide
 let g:floaterm_width = 0.9
 let g:floaterm_height = 0.9
+let g:airline_theme='deus'
 "colorscheme dracula
 
 "autocmd vimenter * ++nested colorscheme dracula
