@@ -2,6 +2,7 @@ Terminal:
 Currently using Xfce4-terminal with:
   - Tmux Startup
   - Oh-My-Zsh w/ "awesomepanda" theme
+  - Whatever terminal supports image and fullscreen launching, currently qterminal
   
 Editor:
 Currently using nvim with:
@@ -9,8 +10,8 @@ Currently using nvim with:
   - Vim-plug plugin manager
   - fzf Fuzzy Finder
   - NERDTree Explorer
-  - Miscellaneous Icon themes
-  - Powerline
+  - Dracula Icon themes
+  - Airline
   
 Window Manager:
 Attempted to use Kitty Sessions but for what I need, TMUX really does everything and is lighter weight:
