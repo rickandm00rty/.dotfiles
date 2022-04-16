@@ -1,19 +1,29 @@
 Terminal:
-Currently using Xfce4-terminal with:
-  - Tmux Startup
-  - Oh-My-Zsh w/ "awesomepanda" theme
-  - Whatever terminal supports image and fullscreen launching, currently qterminal
+- No longer using Kitty, I use xfce4-terminal or qterminal
+- Shell is ZSH w/ Oh-My-ZSH and 'awesome panda' theming
+
+i3:
+- Modifier changed to ALT
+- Changed default terminal launch
+- Support for polybar
+
+polybar:
+- Currently defaults
+
+TMUX:
+- Basically default TMUX except for color matching to terminal background
+
+NVIM:
+- Pulls from .vimrc
+- Theme (Fluctuates, currently Dracula)
+- Vim-plug plugin manager
+- fzf Fuzzy Finder
+- NERDTree Explorer
+- Treesitter
+- Airline
+
+VIM:
+...Same as NVIM
+
   
-Editor:
-Currently using nvim with:
-  - Theme (Fluctuates, currently Dracula)
-  - Vim-plug plugin manager
-  - fzf Fuzzy Finder
-  - NERDTree Explorer
-  - Dracula Icon themes
-  - Airline
-  
-Window Manager:
-Attempted to use Kitty Sessions but for what I need, TMUX really does everything and is lighter weight:
- - No special TMUX configs at the moment other than matching the status bar line color with my terminal background
- - Eventually want to move to a tiling manager, but will need more practice for that
+ 
