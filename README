@@ -1,37 +1,57 @@
-Terminal:
-- No longer using Kitty, I use xfce4-terminal or qterminal
-- Shell is ZSH w/ Oh-My-ZSH and 'awesome panda' theming
+Update
+------
 
-i3:
+File Setup
+----------
+mkdir:
+~/.config/i3
+~/.config/polybar
+~/.config/nvim
+
+cp to ~/:
+.vimrc
+.tmux.conf
+
+generate SSH Key for Github:
+
+pull dotfiles:
+
+Program & Dependency Install
+----------------------------
+Terminal: [xfce4-terminal, zsh, chsh, Oh-My-ZSH]
+- No longer using Kitty, I use xfce4-terminal for transparent background
+- Shell is ZSH w/ Oh-My-ZSH and 'awesome panda' theming  
+
+WM: [i3, dmenu, feh, polybar]
 - Modifier changed to ALT
 - Changed default terminal launch
-- Support for polybar
+- Support for polybar  
 
-polybar:
-- Currently defaults
-
-TMUX:
-- Basically default TMUX except for color matching to terminal background
-
-NVIM:
+IDE: [neovim]
 - Pulls from .vimrc
 - Theme (Fluctuates, currently Dracula)
 - Vim-plug plugin manager
 - fzf Fuzzy Finder
 - NERDTree Explorer
 - Treesitter
-- Airline
+- Airline  
 
-VIM:
-...Same as NVIM
+Browser: [microsoft-edge-stable[
+ - Apps:
+    - Reddit
+    - Twitter
+    - YouTube
+    - Twitch
+- Linked to Microsoft Account for everything else
 
-SETUP STEPS (Map for eventual scripted setup):
-- Install Fedora
-- Install Apps
-  [i3, dmenu, polybar, Microsoft Edge, AppImageLauncher, Obsidian, NVIM, qterminal OR xfce4-terminal, ZSH, Oh-My-ZSH, Discord, Steam]
-- Configure github SSH access
-- Pull .dotfiles
-- Update 
-- Reboot
+FINAL STEPS:
 - Login and realize all of your errors and correct above steps..........
+
+
+
+ISSUES:
+Polybar does not launch automatically
+Wallpaper through feh does not set
+Tmux color-matching
+
  
