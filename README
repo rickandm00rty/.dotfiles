@@ -1,18 +1,19 @@
 Terminal:
-Currently using Kitty with:
-  - Startup sessions 
-  - Adventure Time Theme & Transparency
+Currently using Xfce4-terminal with:
+  - Tmux Startup
+  - Oh-My-Zsh w/ "awesomepanda" theme
+  - Whatever terminal supports image and fullscreen launching, currently qterminal
   
 Editor:
-Currently using vim with:
-  - Gruvbox Theme
+Currently using nvim with:
+  - Theme (Fluctuates, currently Dracula)
   - Vim-plug plugin manager
   - fzf Fuzzy Finder
   - NERDTree Explorer
-  - Miscellaneous Icon themes
-  - Powerline
+  - Dracula Icon themes
+  - Airline
   
 Window Manager:
-Currently attempting to use Kitty startup sessions, but might use TMUX:
- - No special TMUX configs at the moment but TMUX messes with my color scheming in vim and I haven't figured that out yet. Kitty startup sessions might be more elegent. 
- - Eventually want to move to i3 as a tiling manager but learning vim first
+Attempted to use Kitty Sessions but for what I need, TMUX really does everything and is lighter weight:
+ - No special TMUX configs at the moment other than matching the status bar line color with my terminal background
+ - Eventually want to move to a tiling manager, but will need more practice for that
