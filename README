@@ -25,5 +25,13 @@ NVIM:
 VIM:
 ...Same as NVIM
 
-  
+SETUP STEPS (Map for eventual scripted setup):
+- Install Fedora
+- Install Apps
+  [i3, dmenu, polybar, Microsoft Edge, AppImageLauncher, Obsidian, NVIM, qterminal OR xfce4-terminal, ZSH, Oh-My-ZSH, Discord, Steam]
+- Configure github SSH access
+- Pull .dotfiles
+- Update 
+- Reboot
+- Login and realize all of your errors and correct above steps..........
  
