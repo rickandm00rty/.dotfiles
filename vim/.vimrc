@@ -7,8 +7,9 @@ endif
 call plug#begin('~/.vim/autoload/')
   "https://github.com/preservim/nerdtree
   Plug 'preservim/nerdtree'
-  
-  Plug 'dracula/vim', { 'as': 'dracula' }
+
+  Plug 'tomasr/molokai'
+  Plug 'fmoralesc/molokayo'
 
   "https://github.com/junegunn/fzf/blob/master/README-VIM.md  
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

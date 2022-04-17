@@ -1,5 +1,5 @@
 Terminal:
-- No longer using Kitty, I use xfce4-terminal or qterminal
+- No longer using Kitty, I use xfce4-terminal
 - Shell is ZSH w/ Oh-My-ZSH and 'awesome panda' theming
 
 i3:
@@ -11,11 +11,14 @@ polybar:
 - Currently defaults
 
 TMUX:
-- Basically default TMUX except for color matching to terminal background
+- Switch MOD to Ctrl + A
+- Nova/Nord Theming
+- Split panes using | and -
+
 
 NVIM:
 - Pulls from .vimrc
-- Theme (Fluctuates, currently Dracula)
+- Theme (Fluctuates, currently Molokayo)
 - Vim-plug plugin manager
 - fzf Fuzzy Finder
 - NERDTree Explorer
