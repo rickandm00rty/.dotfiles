@@ -17,6 +17,17 @@ Tools I use daily include:
 	- GIMP
 	- gnome-disks
 	- OTHERS
+	
+First Steps (Remember: this is experimental, commands in teh script may simply fail/need adjustments which is why I recommend a fork or editing locally)
+-----------
+- Install preferred base distro (Currently Fedora 35 i3 Spinf or me)
+- Reboot & Login
+- sudo dnf update & upgrade
+- sudo dnf install git
+- git clone https://GitHub.com/rickandm00rty/dotfiles
+- cd dotfiles
+- sudo chmod +x ./install.sh
+- sudo ./install.sh
 
 After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and Installing Edge Apps/Password Manager). 
 This is a VERY rough outline and factors will change greatly depending on your environment. My main goal was easy readability and control over variables, so it should be easy to customize although you'll need to be familiar of dependencies needed. 
