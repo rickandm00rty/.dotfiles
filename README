@@ -1,6 +1,22 @@
-<<<<<<< HEAD
-Terminal:
-- No longer using Kitty, I use xfce4-terminal
-- Shell is ZSH w/ Oh-My-ZSH and 'awesome panda' theming
-=======
-Updated README Coming Soon with Automated Script
+I am distro agnostic although I tend to prefer Fedora. Choose whatever suits you best and just be aware of the package manager needed. 
+This script can be improved by detecting the environment the script is running in and placing the appropriate package manager commands via a variable but I am too lazy for that at the moment. 
+Feel free to fork and add that if you would like.  
+
+Tools I use daily include:
+	- i3
+	- NVIM
+	- XFCE Terminal (Simple and I do not need GPU Rendering)
+	- Oh-My-Zsh (Shell Theming and Plugin Support)
+	- TMUX
+	- appImageLauncher
+	- Obsidian (Notes)
+	- Microsoft Edge (Browser and YouTube/Twitch/Twitter/Reddit)
+	- Remmina (RDP)
+	- Sublime Text (Backup Notes - I am still Learning VIM)
+	- Discord
+	- GIMP
+	- gnome-disks
+	- OTHERS
+
+After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and Installing Edge Apps/Password Manager). 
+This is a VERY rough outline and factors will change greatly depending on your environment. My main goal was easy readability and control over variables, so it should be easy to customize although you'll need to be familiar of dependencies needed. 
