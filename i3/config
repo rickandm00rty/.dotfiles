@@ -28,7 +28,13 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# keybinding to lock screen
+bindsym Control+Mod1+l exec "i3lock -c 000000"
+
+# auto lock the screen
+exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -202,10 +208,19 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+bar {
+        position top
+        status_command i3status
+        font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+        font pango:DejaVu Sans Mono 10
+}
+
+# Polybar was used, but is unreliable and requires a launch script and separate config directory. Seems overkill for information displaying
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #i3Lock
-bindsym $mod+Control+l  exec /bin/v3lock
+#bindsym $mod+Control+l  exec /bin/v3lock
 
 # Bind System settings
 bindsym $mod+z exec env XDG_CURRENT_DESKTOP=GNOME gnome-control-center
@@ -225,3 +240,4 @@ exec xfce4-terminal
 
 # SUSPEND
 bindsym $mod+Shift+period exec systemctl suspend
+
