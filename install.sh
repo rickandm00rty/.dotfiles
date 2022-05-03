@@ -12,6 +12,7 @@ mkdir ~/.config/i3status
 mkdir ~/.config/nvim
 mkdir ~/.config/i3status
 
+cp ~/dotfiles/nanotubes.jpeg ~/Pictures/Wallpapers/
 cp -r ~/dotfiles/i3/* ~/.config/i3/
 cp -r ~/dotfiles/i3status/* ~/.config/i3status/
 cp -r ~/dotfiles/nvim/* ~/.config/nvim/
