@@ -21,7 +21,7 @@ First Steps (Remember: this is experimental, commands in the script may simply f
 - Reboot & Login
 - sudo dnf update & upgrade
 - sudo dnf install git
-- git clone https://GitHub.com/rickandm00rty/dotfiles
+- git clone https://github.com/rickandm00rty/dotfiles
 - cd dotfiles
 - sudo chmod +x ./install.sh
 - sudo ./install.sh
