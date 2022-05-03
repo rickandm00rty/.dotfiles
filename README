@@ -26,5 +26,6 @@ First Steps (Remember: this is experimental, commands in the script may simply f
 - sudo chmod +x ./install.sh
 - sudo ./install.sh
 
-After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and Installing Edge Apps/Password Manager). 
+After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and Installing Edge Apps/Password Manager). You can also populate the Pictures/Wallpapers directory with more images, it will randomize each time i3 is loaded.
+
 This is a rough outline and factors will change greatly depending on your environment. My main goal was to make it easy to have the packages I need as I set up other environments. 
