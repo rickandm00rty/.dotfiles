@@ -12,15 +12,12 @@ Tools I use daily include:
 	- Obsidian (Notes)
 	- Microsoft Edge (Browser and YouTube/Twitch/Twitter/Reddit)
 	- Remmina (RDP)
-	- Sublime Text (Backup Notes - I am still Learning VIM)
 	- Discord
 	- GIMP
-	- gnome-disks
-	- OTHERS
 	
-First Steps (Remember: this is experimental, commands in teh script may simply fail/need adjustments which is why I recommend a fork or editing locally)
+First Steps (Remember: this is experimental, commands in the script may simply fail/need adjustments which is why I recommend a fork or editing locally)
 -----------
-- Install preferred base distro (Currently Fedora 35 i3 Spinf or me)
+- Install preferred base distro (Currently Fedora 35 i3 Spin for me)
 - Reboot & Login
 - sudo dnf update & upgrade
 - sudo dnf install git
@@ -30,4 +27,4 @@ First Steps (Remember: this is experimental, commands in teh script may simply f
 - sudo ./install.sh
 
 After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and Installing Edge Apps/Password Manager). 
-This is a VERY rough outline and factors will change greatly depending on your environment. My main goal was easy readability and control over variables, so it should be easy to customize although you'll need to be familiar of dependencies needed. 
+This is a rough outline and factors will change greatly depending on your environment. My main goal was to make it easy to have the packages I need as I set up other environments. 
