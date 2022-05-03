@@ -35,7 +35,11 @@ echo "Getting that cool shell stuff and setting default to ZSH"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 
-echo "Grabbing Obsidian .appImage and AppImageLauncher"
+echo "Grabbing Obsidian and Configuring AppImageLauncher"
 cd ~/Downloads
-wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm and dependencies
+wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+dnf install -y ./appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+
+mv ~/dotfiles/Obsidian-0.14.6.AppImage ~/Downloads
+
 
