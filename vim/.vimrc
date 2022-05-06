@@ -55,4 +55,5 @@ if (empty($TMUX))
  endif
 endif
 
+map <F2> :NERDTreeToggle<CR>
 nmap <C-P> :FZF<CR>
