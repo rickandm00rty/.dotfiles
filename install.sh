@@ -2,10 +2,9 @@
 
 
 echo "Installing Dependencies & Programs..."
-echo "Configuring Files..."
 sudo dnf -y install feh conky picom scrot rofi imwheel xfce4-terminal zsh neovim tmux thunar gnome-control-center gnome-software neofetch
 
-echo "Making Directories and Copying Binaries..."
+echo "Making Directories and Copying Config Files..."
 mkdir ~/Downloads
 mkdir ~/Pictures ~/Pictures/Wallpapers/
 mkdir ~/.config/i3 
@@ -23,13 +22,13 @@ cp -r ~/dotfiles/ZSH/.zshrc ~/
 
 #EDGE
 echo "Adding MS Edge & Steam RPM's..."
-
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
 sudo dnf update --refresh
 sudo dnf install -y microsoft-edge-stable
 
 #STEAM
+echo "installing Steam"
 sudo dnf install -y steam
 
 #ZSH/Oh-My-Zsh
@@ -48,4 +47,7 @@ chmod +x mousewheel.sh
 
 ./mousewheel.sh
 
+echo "Generating SSH keys..."
+cd ~/
+ssh-keygen -A
 
