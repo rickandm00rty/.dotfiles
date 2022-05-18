@@ -2,7 +2,7 @@
 
 
 echo "Installing Dependencies & Programs..."
-sudo dnf -y install feh conky picom scrot rofi imwheel xfce4-terminal zsh neovim tmux thunar gnome-control-center gnome-software neofetch
+sudo dnf -y install feh conky picom scrot rofi imwheel xfce4-terminal zsh neovim tmux thunar gnome-control-center gnome-software neofetch flameshot
 
 echo "Making Directories and Copying Config Files..."
 mkdir ~/Downloads
