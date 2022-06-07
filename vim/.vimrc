@@ -6,15 +6,40 @@ endif
 "Plugins
 call plug#begin('~/.vim/autoload/')
   
+  "LSP Support
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'williamboman/nvim-lsp-installer'
+
+  "Autocompletion
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'saadparwaiz1/cmp_luasnip'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-nvim-lua'
+
+  "Snippets
+  Plug 'L3MON4D3/LuaSnip'
+  Plug 'rafamadriz/friendly-snippets'
+
+  Plug 'VonHeikemen/lsp-zero.nvim'
+
+  "Vim Be Good Trainer
+  Plug 'ThePrimeagen/vim-be-good'
+
   "File Explorer
   Plug 'preservim/nerdtree'
 
+  "Telescope
+  "Plug 'nvim-lua/popup.nvim'
+  "Plug 'nvim-lua/plenary.nvim'
+  "Plug 'nvim-telescope/telescope.nvim'
+  "Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+  
   "Theme
-  "Plug 'tomasr/molokai'
-  "Plug 'fmoralesc/molokayo'
   Plug 'bluz71/vim-nightfly-guicolors'
 
-  "Status & Theme
+  "Status Bar Theme
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   
@@ -68,3 +93,16 @@ let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
+"Telescope shortcuts
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+
+lua <<EOF
+local lsp = require('lsp-zero')
+
+lsp.preset('recommended')
+lsp.setup()
+EOF
