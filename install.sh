@@ -1,40 +1,30 @@
 #!/bin/bash
-
+echo "Initializing installer..."
 
 echo "Installing Dependencies & Programs..."
-sudo dnf -y install feh conky picom scrot rofi imwheel xfce4-terminal zsh neovim tmux thunar gnome-control-center gnome-software neofetch flameshot
+sudo dnf -y install feh conky picom scrot rofi imwheel xfce4-terminal zsh neovim tmux thunar gnome-disks gnome-control-center gnome-software neofetch flameshot
 
 echo "Making Directories and Copying Config Files..."
 mkdir ~/Downloads
+mkdir ~/Documents
 mkdir ~/Pictures ~/Pictures/Wallpapers/
 mkdir ~/.config/i3 
 mkdir ~/.config/i3status
-mkdir ~/.config/nvim
-mkdir ~/.config/i3status
 
-cp ~/dotfiles/nanotubes.jpeg ~/Pictures/Wallpapers/
+cp -r ~/dotfiles/wallpapers/* ~/Pictures/Wallpapers/
 cp -r ~/dotfiles/i3/* ~/.config/i3/
 cp -r ~/dotfiles/i3status/* ~/.config/i3status/
-cp -r ~/dotfiles/nvim/* ~/.config/nvim/
 cp -r ~/dotfiles/tmux/.tmux.conf  ~/
 cp -r ~/dotfiles/vim/.vimrc ~/
-cp -r ~/dotfiles/ZSH/.zshrc ~/
-
-#EDGE
-echo "Adding MS Edge & Steam RPM's..."
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
-sudo dnf update --refresh
-sudo dnf install -y microsoft-edge-stable
-
-#STEAM
-echo "installing Steam"
-sudo dnf install -y steam
 
 #ZSH/Oh-My-Zsh
-echo "Getting that cool shell stuff and setting default to ZSH..."
+echo "Getting shell and setting to ZSH..."
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 chsh -s $(which zsh)
+
+#AstroVim
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim +PackerSync
 
 echo "Grabbing Obsidian and Configuring AppImageLauncher..."
 cd ~/Downloads
