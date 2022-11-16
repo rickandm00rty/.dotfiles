@@ -4,20 +4,20 @@ Feel free to fork and add that if you would like.
 
 Tools I use daily include:
 	- i3
-	- NVIM
-	- XFCE Terminal (Simple and I do not need GPU Rendering)
+	- NVIM (Specifically Astrovim right now)
+	- XFCE Terminal (Any terminal works, I do not need GPU rendering)
 	- Oh-My-Zsh (Shell Theming and Plugin Support)
 	- TMUX
 	- appImageLauncher
 	- Obsidian (Notes)
-	- Microsoft Edge (Browser and YouTube/Twitch/Twitter/Reddit)
+	- Firefox (Usually installed by default on distros) 
 	- Remmina (RDP)
 	- Discord
 	- GIMP
 	
 First Steps (Remember: this is experimental, commands in the script may simply fail/need adjustments which is why I recommend a fork or editing locally)
 -----------
-- Install preferred base distro (Currently Fedora 35 i3 Spin for me)
+- Install preferred base distro
 - Reboot & Login
 - sudo dnf update & upgrade
 - sudo dnf install git
@@ -26,6 +26,6 @@ First Steps (Remember: this is experimental, commands in the script may simply f
 - sudo chmod +x ./install.sh
 - sudo ./install.sh
 
-After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and Installing Edge Apps/Password Manager). You can also populate the Pictures/Wallpapers directory with more images, it will randomize each time i3 is loaded.
+After the script finishes I typically just start playing around and filling in any gaps (Graphic Drivers (if needed) and configuring Password Manager and logins. 
 
-This is a rough outline and factors will change greatly depending on your environment. My main goal was to make it easy to have the packages I need as I set up other environments. 
+This is a rough outline and factors will change depending on your environment. My main goal was to streamline program installs and new distro setup.
