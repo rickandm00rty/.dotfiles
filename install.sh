@@ -31,7 +31,7 @@ cd ~/Downloads
 wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 dnf install -y ./appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 
-echo "Adjusting Scrolling..."
+echo "Adjust Scrolling..."
 bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
 chmod +x mousewheel.sh
 
@@ -39,5 +39,13 @@ chmod +x mousewheel.sh
 
 echo "Generating SSH keys..."
 cd ~/
-ssh-keygen -A
+ssh-keygen -t ed25519 -C "kylenelson272@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+
+echo "Add the key above to your Github profile to enable git remote"
+
+
+
 
