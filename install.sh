@@ -26,25 +26,30 @@ chsh -s $(which zsh)
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
 
+#Obsidian Notebook
 echo "Grabbing Obsidian and Configuring AppImageLauncher..."
 cd ~/Downloads
 wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 dnf install -y ./appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 
+#Adjust Mouse Scroll Speed - Typically 3-5 is a good range
 echo "Adjust Scrolling..."
 bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
 chmod +x mousewheel.sh
-
 ./mousewheel.sh
 
+#Generate SSH keys for Github access
 echo "Generating SSH keys..."
 cd ~/
-ssh-keygen -t ed25519 -C "emailhere.com"
+echo "Enter your Github email:"
+read EMAIL
+ssh-keygen -t ed25519 -C "$EMAIL"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
 
-echo "Add the key above to your Github profile to enable git remote"
+echo "Add the key for $EMAIL to your Github profile to enable git remote"
+
 
 
 
