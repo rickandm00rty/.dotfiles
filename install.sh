@@ -24,7 +24,7 @@ chsh -s $(which zsh)
 
 #AstroVim
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim +PackerSync
+nvim  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 #Obsidian Notebook
 echo "Grabbing Obsidian and Configuring AppImageLauncher..."
