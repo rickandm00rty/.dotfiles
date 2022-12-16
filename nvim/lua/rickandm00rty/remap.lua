@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>f", vim.cmd.NERDTreeToggle)
+
 
 -- Move visually selected block of code --> Select, J and K to move up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -15,13 +17,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Keep search terms in middle
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
-
-vim.keymap.set("n", "<leader>vwm", function()
-    require("vim-with-me").StartVimWithMe()
-end)
-vim.keymap.set("n", "<leader>svwm", function()
-    require("vim-with-me").StopVimWithMe()
-end)
 
 -- Delete and replace without saving deletion to buffer
 vim.keymap.set("x", "<leader>p", "\"_dP")
