@@ -10,12 +10,14 @@ mkdir ~/Documents
 mkdir ~/Pictures ~/Pictures/Wallpapers/
 mkdir ~/.config/i3 
 mkdir ~/.config/i3status
+mkdir ~/.config/nvim/
 
 cp -r ~/dotfiles/wallpapers/* ~/Pictures/Wallpapers/
 cp -r ~/dotfiles/i3/* ~/.config/i3/
 cp -r ~/dotfiles/i3status/* ~/.config/i3status/
 cp -r ~/dotfiles/tmux/.tmux.conf  ~/
-cp -r ~/dotfiles/vim/.vimrc ~/
+cp -r ~/dotfiles/nvim/ ~/nvim
+# cp -r ~/dotfiles/vim/.vimrc ~/
 
 #ZSH/Oh-My-Zsh
 echo "Getting shell and setting to ZSH..."
@@ -23,8 +25,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 chsh -s $(which zsh)
 
 #AstroVim
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+#git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+#nvim  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 #Obsidian Notebook
 echo "Grabbing Obsidian and Configuring AppImageLauncher..."
