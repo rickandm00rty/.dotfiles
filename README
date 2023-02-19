@@ -1,13 +1,14 @@
-I am distro agnostic although I tend to prefer Fedora. Choose whatever suits you best and just be aware of the package manager needed. 
+I am distro agnostic although I tend to prefer Fedora or something similar. Choose whatever suits you best and just be aware of the package manager and dependencies needed. 
 This script can be improved by detecting the environment the script is running in and placing the appropriate package manager commands via a variable but I am too lazy for that at the moment. 
 Feel free to fork and add that if you would like.  
 
 Tools I use daily include:
-	- i3
-	- NVIM (Specifically Astrovim right now)
-	- XFCE Terminal (Any terminal works, I do not need GPU rendering)
+	- i3 (or PopOS tiling feature)
+	- VIM (I was using neovim with all the plugins but my workflow is better with vim for text edit and VSCode for code bases. Configuring neovim everytime I used a new distro was a pain for me and my lack of wanting to learn the ins and outs.)
+	- VSCode 
+    - XFCE Terminal or Kitty
 	- Oh-My-Zsh (Shell Theming and Plugin Support)
-	- TMUX
+	- TMUX (Unless I am using Kitty)
 	- appImageLauncher
 	- Obsidian (Notes)
 	- Firefox (Usually installed by default on distros) 
